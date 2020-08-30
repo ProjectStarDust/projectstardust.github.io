@@ -7,113 +7,164 @@
 		<script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
 		<title>Project StarDust | 星尘计划</title>
 		<style>
-			*{
-				font-family:"Microsoft Yahei";
+			* {
+				font-family: "Microsoft Yahei";
 			}
-                        #touhou{
-                               position:fixed;
-                               right:0;
-                               bottom:0;
-                        }
-			#page-title{
-				font-size:xx-large;
+			#touhou {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+			}
+			#page-title {
+				font-size: xx-large;
 				font-weight: 300;
-				margin:2px;
-				margin-left:10px;
+				margin: 2px;
+				margin-left: 10px;
 			}
-			#page-description{
-				font-weight:100;
-				margin:3px;
-				margin-left:10px;
+			#page-description {
+				font-weight: 100;
+				margin: 3px;
+				margin-left: 10px;
 			}
-			#title-container{
-				width:100%;
-				height:auto;
-				padding:2px;
-				border-bottom:1px solid black;
+			#title-container {
+				width: 100%;
+				height: auto;
+				padding: 2px;
+				border-bottom: 1px solid black;
 			}
-			.subdiv{
-				margin:40px;
-				padding:20px;
-				padding-top:0px;
-				height:auto;
-				width:auto;
+			.subdiv {
+				margin: 40px;
+				padding: 20px;
+				padding-top: 0px;
+				height: auto;
+				width: auto;
 			}
-			.servers{
-				margin:2px;
+			.servers {
+				margin: 2px;
 			}
-			.nav-title{
+			.nav-title {
 				font-weight: 300;
-				margin-left:10px;
+				margin-left: 10px;
 			}
-			#dream{
-			font-weight: 100;
-font-style: italic;
+			#dream {
+				font-weight: 100;
+				font-style: italic;
 			}
-			#dream:before{
-			content:"「";
+			#dream:before {
+				content: "「";
 			}
-			#dream:after{
-			content:"」";
+			#dream:after {
+				content: "」";
 			}
-			.s2{
-			display:inline-block;
-				margin-right:10px;
+			.s2 {
+				display: inline-block;
+				margin-right: 10px;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="title-container" class="mdui-shadow-4">
-		<h1 id="page-title">Project StarDust | 星尘计划</h1><br/>
-		<span id="page-description">免费在线AO3代理</span>
-		<span class="servers"><a href="https://www.winsloweric.cn/?p=129"> [留言板]</a></span>
+			<h1 id="page-title">Project StarDust | 星尘计划</h1>
+			<br/>
+			<span id="page-description">免费在线AO3代理</span>
+			<span class="servers"><a href="https://www.winsloweric.cn/?p=129"> [留言板]</a></span>
 		</div>
 		<script>
-			function emergency(){
+			function emergency() {
 				var verify = prompt("紧急分流，请输入 1A2B3C 验证以继续访问");
-				if(verify == "1A2B3C" || verify == "1a2b3c"){
+				if (verify == "1A2B3C" || verify == "1a2b3c") {
 					window.location.href = "https://reserved.projectstardust.org";
 				}
 			}
 
-			</script>
+		</script>
 		<div class="subdiv mdui-shadow-2 mdui-hoverable">
 			<span class="nav-title"><h2>分流服务器列表</h2></span>
 			<ul id="address-list">
-				<li class="servers">优先使用[通过CDN连接]，如果出现白屏/加载失败尝试[直连]</li>
-				<li class="servers s2"><h3>分流服务器 #1 [洛杉矶1]</h3> <a href="https://f1.projectstardust.org">[通过CDN连接]</a><a href="https://d3.projectstardust.org">[直连]</a></li>
-				<li class="servers s2"><h3>分流服务器 #2 [华盛顿]</h3> <a href="https://server1.projectstardust.org">[通过CDN连接]</a><a href="https://d1.projectstardust.org">[直连]</a></i></li>
-		<br/>		
-		<del><li class="servers s2"><h3>分流服务器 #3 [洛杉矶2]</h3> <a href="https://server2.projectstardust.org">[通过CDN连接]</a><a href="https://d2.projectstardust.org">[直连]</a></i></li></del><br/><span>此分流已经被用为V2R节点。</span>
-<li class="servers s2"><h3><a href="https://origin.projectstardust.org">分流服务器 #4 [CloudFlareCDN][测试]</a></h3></li>
-<br/>
-<li class="servers s2"><h3><a href="https://twilight-frost-4c09.wjsp.workers.dev">分流服务器 #5 [CFWorker][测试]</a></h3></li>
-                                <a onclick="emergency();"><li class="servers"><h3>紧急备用分流</h3></li></a>
-				<li class="servers"><h3>FAQ：</h3><h4>登录的话，在输完账号密码以后点击登录，会被跳转到AO3原站，然后手动返回星尘计划</h4><h4>切中文只能靠翻译插件了</h4></li>
-				<li class="servers"><h3>星尘计划V2R节点订阅地址:https://www.projectstardust.org/ao3.cfg </h3><br/><strong>注意！ 使用该V2R节点需要使用PAC模式<br/>并在本地规则中添加“https://download.archiveofourown.org,<br/>https://www.archiveofourown.org,https://www.archiveofourown.org”<br/>如果无法添加本地规则需要短暂开启全局模式。<br/>星尘计划并不提供任何VPN服务，该V2R节点已经屏蔽常见国外网站<br/>并且将会继续屏蔽G/F/W/List中的网站，<br/>这里建议请勿使用该V2R节点进行除了AO3外的外网访问防止WinslowEric吃橘子（大雾）。</strong><br/>推荐使用V2R客户端：电脑V2RayN (Win)/V2RayU (苹果)，手机Kitsunebi。</li>
-<br/>				
-<li class="servers"><i id="dream">赤より紅い夢，紅より儚い永遠</i></li>
+				<li class="servers">
+					优先使用[通过CDN连接]，如果出现白屏/加载失败尝试[直连]
+				</li>
+				<li class="servers s2">
+					<h3>分流服务器 #1 [洛杉矶1]</h3><a href="https://f1.projectstardust.org">[通过CDN连接]</a><a href="https://d3.projectstardust.org">[直连]</a>
+				</li>
+				<li class="servers s2">
+					<h3>分流服务器 #2 [华盛顿]</h3><a href="https://server1.projectstardust.org">[通过CDN连接]</a><a href="https://d1.projectstardust.org">[直连]</a>
+				</li>
+				<br/>
+					<li class="servers s2">
+						<del><h3>分流服务器 #3 [洛杉矶2]</h3><a href="https://server2.projectstardust.org">[通过CDN连接]</a><a href="https://d2.projectstardust.org">[直连]</a></del>
+					</li>
+				<span>此分流已经被用为V2R节点。</span>
+				<li class="servers s2">
+					<h3><a href="https://origin.projectstardust.org">分流服务器 #4 [CloudFlareCDN][测试]</a></h3>
+				</li>
+				<br/>
+				<li class="servers s2">
+					<h3><a href="https://twilight-frost-4c09.wjsp.workers.dev">分流服务器 #5 [CFWorker][测试]</a></h3>
+				</li>
+				<a onclick="emergency();">
+				<li class="servers">
+					<h3>紧急备用分流</h3>
+				</li></a>
+				<li class="servers">
+					<h3>FAQ：</h3><h4>登录的话，在输完账号密码以后点击登录，会被跳转到AO3原站，然后手动返回星尘计划</h4><h4>切中文只能靠翻译插件了</h4>
+				</li>
+				<li class="servers">
+					<h3>星尘计划V2R节点订阅地址:https://www.projectstardust.org/ao3.cfg </h3>
+					<br/>
+					<strong>注意！ 使用该V2R节点需要使用PAC模式
+					<br/>
+					并在本地规则中添加“https://download.archiveofourown.org,
+					<br/>
+					https://www.archiveofourown.org,https://www.archiveofourown.org”
+					<br/>
+					如果无法添加本地规则需要短暂开启全局模式。
+					<br/>
+					星尘计划并不提供任何VPN服务，该V2R节点已经屏蔽常见国外网站
+					<br/>
+					并且将会继续屏蔽G/F/W/List中的网站，
+					<br/>
+					这里建议请勿使用该V2R节点进行除了AO3外的外网访问防止WinslowEric吃橘子（大雾）。</strong>
+					<br/>
+					推荐使用V2R客户端：电脑V2RayN (Win)/V2RayU (苹果)，手机Kitsunebi。
+				</li>
+				<br/>
+				<li class="servers">
+					<i id="dream">赤より紅い夢，紅より儚い永遠</i>
+				</li>
 			</ul>
 		</div>
-<iframe id="touhou" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=24833754&auto=0&height=90"></iframe>		<div class="subdiv mdui-shadow-2 mdui-hoverable">
+		<iframe id="touhou" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=24833754&auto=0&height=90"></iframe>
+		<div class="subdiv mdui-shadow-2 mdui-hoverable">
 			<span class="nav-title"><h2>目前接受捐助</h2></span>
-			<span class="servers">在经过十万甚至九万年后 我也没能搞定Google Adsense...随意</span><br/>
-                        <a href="https://www.projectstardust.org/pay.jpg">捐助二维码</a>
-			<span class="servers">
-					来自糯米的 ￥66.60，来自曲非烟的￥199+￥199，来自有鹿在林的￥30，来自同志，伏特加！的￥40，来自葵葵ria的￥199<br/>来自快乐小张的￥60 来自明远的￥50<br/></span>
-			<span class="servers">二维码收款我看不到完整名字，列表如下：*倩:￥10，*柔：￥6，S*l：￥16.8，*昼：￥16.79，2*g:￥1</span><br/>
+			<span class="servers">在经过十万甚至九万年后 我也没能搞定Google Adsense...随意</span>
+			<br/>
+			<a href="https://www.projectstardust.org/pay.jpg">捐助二维码</a>
+			<span class="servers"> 来自糯米的 ￥66.60，来自曲非烟的￥199+￥199，来自有鹿在林的￥30，来自同志，伏特加！的￥40，来自葵葵ria的￥199
+				<br/>
+				来自快乐小张的￥60 来自明远的￥50
+				<br/>
+			</span>
+			<span class="servers">二维码收款我看不到完整名字，列表如下：*倩:￥10，*柔：￥6，S*l：￥16.8，*昼：￥16.79，2*g:￥1</span>
+			<br/>
 			<span class="servers">感谢你们对星尘计划的支持</span>
 		</div>
 		<div class="subdiv mdui-shadow-2 mdui-hoverable">
 			<span class="nav-title"><h2>关于作者</h2></span>
-			<span class="servers"><a href="https://www.winsloweric.com">神奇的WinslowEric, Email:huyunchuan@winsloweric.cn</a></span><br/>
-			<span class="servers">知乎:SorenEricMent 微博:神奇的WinslowEric</span><br/>
+			<span class="servers"><a href="https://www.winsloweric.com">神奇的WinslowEric, Email:huyunchuan@winsloweric.cn</a></span>
+			<br/>
+			<span class="servers">知乎:SorenEricMent 微博:神奇的WinslowEric</span>
+			<br/>
 		</div>
-<div class="subdiv mdui-shadow-2 mdui-hoverable">
+		<div class="subdiv mdui-shadow-2 mdui-hoverable">
 			<span class="nav-title"><h2>关于安全性</h2></span>
-			<span class="servers">这是星尘计划每天的流量</span><br/>
-			<img src="https://cdn.winsloweric.cn/psd_1.png" /><br/>	
-			<span class="servers">除了紧急备用分流，中间都隔着CloudFlare的CDN，我能获取到的IP都是CloudFlare的,也就是说在我这里你是完全匿名的</span><br/>
-			<span class="servers">我也没兴趣收集什么，我每天的AP课作业都做不完</span><br/>
+			<span class="servers">这是星尘计划每天的流量</span>
+			<br/>
+			<img src="https://cdn.winsloweric.cn/psd_1.png" />
+			<br/>
+			<span class="servers">除了紧急备用分流，中间都隔着CloudFlare的CDN，我能获取到的IP都是CloudFlare的,也就是说在我这里你是完全匿名的</span>
+			<br/>
+			<span class="servers">我也没兴趣收集什么，我每天的AP课作业都做不完</span>
+			<br/>
 		</div>
 </html>
